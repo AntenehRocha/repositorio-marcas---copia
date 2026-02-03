@@ -1,0 +1,235 @@
+body {
+  font-family: "Google Sans Code", monospace;
+  background-color: white;
+  margin: 0px;
+}
+
+/* Ahora voy a hacer menu de navegacion */
+
+header {
+  background-color: grey;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  position: sticky;
+}
+
+.navbar {
+  color: white;
+  padding: 10px 20px;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+/* Ahora voy a hacer el main */
+
+.marcas-tienda {
+  display: grid;
+  grid-template-areas:
+    "celda1 celda2 celda3 celda4"
+    "celda5 celda6 celda7 celda8";
+  height: 450px;
+  width: 100%;
+  gap: 50px;
+  margin: auto;
+  background-color: white;
+  padding: 10px 0;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-area: "celda2";
+}
+
+.contenedor-imagen {
+  height: 150px;
+  width: 350px;
+  background-color: white;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.contenedor-imagen:hover {
+  height: 150px;
+  width: 350px;
+  background-color: rgb(214, 214, 214);
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    "celda2 celda2"
+    "celda2 celda2";
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Ahora voy a hacer la seccion cta */
+
+.new-stone-island-cta {
+  background-color: white;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+  gap: 90px;
+}
+
+.new-stone-island-cta:hover {
+  background-color: rgb(214, 214, 214);
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+  gap: 90px;
+}
+
+.contenedor-imagen-cta {
+  height: 150px;
+  width: 350px;
+  background-color: white;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.contenedor-imagen-cta:hover {
+  height: 150px;
+  width: 350px;
+  background-color: white;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.cta {
+  margin-bottom: 50px;
+}
+
+.boton-cta {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.boton-cta:hover {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+/* Ahora voy a hacer el footer */
+
+footer {
+  background-color: grey;
+  padding: 10px 0;
+  margin-top: 30px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Ahora voy a hacer los estilos de las paginas de las marcas */
+
+/* Galería Stone Island */
+
+.galeria-stone-island {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+}
+
+.galeria-stone-island h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+  font-weight: bold;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "item1 item2 item3 item4"
+    "item5 item6 item7 item8"
+    "item9 item10 item11 item12";
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.galeria-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+  padding: 15px;
+}
+
+.galeria-item:nth-child(1) {
+  grid-area: item1;
+}
+.galeria-item:nth-child(2) {
+  grid-area: item2;
+}
+.galeria-item:nth-child(3) {
+  grid-area: item3;
+}
+.galeria-item:nth-child(4) {
+  grid-area: item4;
+}
+.galeria-item:nth-child(5) {
+  grid-area: item5;
+}
+.galeria-item:nth-child(6) {
+  grid-area: item6;
+}
+.galeria-item:nth-child(7) {
+  grid-area: item7;
+}
+.galeria-item:nth-child(8) {
+  grid-area: item8;
+}
+
+.galeria-item img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.galeria-item p {
+  font-size: 1rem;
+  color: #555;
+  font-weight: 500;
+  text-align: center;
+}
